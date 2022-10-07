@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int funkcija(int min, int max, int c, int s){
+	int zavrsnacijena=s * (100+c)/100;
+	return zavrsnacijena>=min && zavrsnacijena<=max;
+}
+
+
+int main(){
+	int min, max, c, s;
+	printf("Unesi min:");
+	scanf("%d",&min);
+	printf("Unesi max:");
+	scanf("%d",&max);
+	printf("Unesi c:");
+	scanf("%d",&c);
+	printf("Unesi s:");
+	scanf("%d",&s);
+	
+	
+	int kupuje=funkcija(min, max, c, s);
+	if(kupuje) printf("Kupice");
+	else printf ("Nece kupiti");
+	
+}
