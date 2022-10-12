@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+float calc (float a, char o, float b){
+if (o=='*')
+   return a*b;
+    else if (o=='-')
+	 return a-b;
+    	else if (o=='+')
+			return a+b;
+			else if (o=='/')
+				return a/b;   
+
+
+}
+
+int main(){
+	float a;
+	float b;
+	char c;
+	printf("Unesi prvi broj\n");
+     scanf("%f",&a);
+     printf("Unesi operatora\n");
+     scanf(" %c",&c);
+     printf("Unesi drugi broj\n");
+     scanf("%f",&b);
+     printf("%.2f",calc(x,y,z));
+
+return 0; 
+	//PRINTF NEŠTO
+	
+	
+	
+}
